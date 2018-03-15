@@ -1,7 +1,7 @@
 
 # Compatibility between react, preact and inferno
 
-This repo wants to be a comparison between react, preact and inferno.
+This repo wants to be a quick way of comparing [react](https://reactjs.org/), [preact](https://preactjs.com/) and [inferno](https://infernojs.org/).
 
 Both preact and inferno have a compatibility layer that should minimize the changes needed for a migration from react.
 
