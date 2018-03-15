@@ -1,0 +1,37 @@
+{
+  "name": "react-preact-inferno-hot-boilerplate",
+  "version": "1.0.0",
+  "description": "A boilerplate for testing react alike libraries",
+  "main": "index.js",
+  "scripts": {
+    "react": "node_modules/.bin/webpack-dev-server --config config/react",
+    "preact": "node_modules/.bin/webpack-dev-server --config config/preact",
+    "inferno": "node_modules/.bin/webpack-dev-server --config config/inferno",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Javier Marquez - javi@arqex.com",
+  "license": "MIT",
+  "dependencies": {
+    "inferno": "^4.0.8",
+    "inferno-clone-vnode": "^4.0.8",
+    "inferno-compat": "^4.0.8",
+    "inferno-create-class": "^4.0.8",
+    "inferno-create-element": "^4.0.8",
+    "preact": "^8.2.7",
+    "preact-compat": "^3.18.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-hot-loader": "^4.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-plugin-inferno": "^4.0.0",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.12",
+    "webpack-dev-server": "^3.1.1"
+  }
+}
