@@ -4,12 +4,12 @@
   "description": "A boilerplate for testing react alike libraries",
   "main": "index.js",
   "scripts": {
-    "react": "node_modules/.bin/webpack-dev-server --config config/react",
-    "react-prod": "node_modules/.bin/webpack --config config/react.prod",
-    "preact": "node_modules/.bin/webpack-dev-server --config config/preact",
-    "preact-prod": "node_modules/.bin/webpack --config config/preact.prod",
-    "inferno": "node_modules/.bin/webpack-dev-server --config config/inferno",
-    "inferno-prod": "node_modules/.bin/webpack --config config/inferno.prod",
+    "react": "PORT=3101 node_modules/.bin/webpack-dev-server --config config/react",
+    "react-prod": "PORT=3101 node_modules/.bin/webpack --config config/react.prod",
+    "preact": "PORT=3102 node_modules/.bin/webpack-dev-server --config config/preact",
+    "preact-prod": "PORT=3102 node_modules/.bin/webpack --config config/preact.prod --verbose",
+    "inferno": "PORT=3103 node_modules/.bin/webpack-dev-server --config config/inferno",
+    "inferno-prod": "PORT=3103 node_modules/.bin/webpack --config config/inferno.prod",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Javier Marquez - javi@arqex.com",

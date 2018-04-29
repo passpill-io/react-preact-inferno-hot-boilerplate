@@ -16,7 +16,8 @@ module.exports = {
 	mode: 'development',
 	resolve: {
 		alias: {
-			'src': src
+			'src': src,
+			'react-hot-loader': 'src/rhl/react-hot-loader'
 		}
 	},
 	module: {

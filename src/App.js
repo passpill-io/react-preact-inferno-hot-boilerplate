@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { hot } from 'react-hot-loader'
+
 import Oo from './Oo'
 import Functional from './Functional'
 

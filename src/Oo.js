@@ -8,7 +8,7 @@ class Oo extends Component {
   render() {
     return (
       <div>
-        <h2>OO Component</h2>
+        <h2>Object Component</h2>
         <input type="text" onChange={ e => this.setState({text: e.target.value})} value={ this.state.text } />
       </div>
     );
