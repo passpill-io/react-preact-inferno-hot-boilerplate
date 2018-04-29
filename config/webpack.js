@@ -1,5 +1,4 @@
 const webpack = require('webpack');
-const babelOpts = require('./babel');
 
 const { join } = require('path');
 const dist = join(__dirname, '..');
@@ -22,7 +21,8 @@ module.exports = {
 	},
 	module: {
 		rules: [{
-			test: /\.jsx?$/,
+			test: /\.m?jsx?$/, // See the m, for loading inferno modules
+			type: 'javascript/auto', // Required also by inferno to load modules in non strict mode https://github.com/webpack/webpack/issues/6699
 			exclude: join(__dirname, '..', 'node_modules'),
 			use: [
 				{ loader: 'babel-loader',	options: {

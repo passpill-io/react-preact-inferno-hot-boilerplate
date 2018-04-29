@@ -7,9 +7,15 @@ class App extends Component {
   state = {
     text: ''
   }
+  ports = {
+    3101: 'React',
+    3102: 'Preact',
+    3103: 'Inferno'
+  }
   render() {
     return (
       <div>
+        <h1>{ this.ports[ location.port ] }</h1>
         <Functional onChange={ e => this.setState({text: e.target.value})} value={ this.state.text } />
         <Oo />
       </div>
